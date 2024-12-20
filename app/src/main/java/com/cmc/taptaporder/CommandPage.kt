@@ -25,6 +25,8 @@ class CommandPage : AppCompatActivity() {
             insets
         }
 
+        // Idk what to do (:
+
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragment_container, MenuFragment())
         fragmentTransaction.commit()
