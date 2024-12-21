@@ -19,10 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-<<<<<<< HEAD
 rootProject.name = "TapTaOrders"
-=======
-rootProject.name = "TapTapOrder"
->>>>>>> main
+
 include(":app")
  
