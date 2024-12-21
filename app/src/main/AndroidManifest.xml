@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.TapTaOrders"
         tools:targetApi="31">
         <activity
@@ -17,6 +18,13 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.TapTaOrders">
+=======
+        android:theme="@style/Theme.TapTapOrder"
+        tools:targetApi="31">
+        <activity
+            android:name=".CommandPage"
+            android:exported="true">
+>>>>>>> main
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,3 +1,9 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">TapTaOrders</string>
+=======
+    <string name="app_name">TapTapOrder</string>
+    <string name="search">Search</string>
+    <string name="taptaporder"><font color="#0F2032">T</font><font color="#000000">ap</font><font color="#0F2032">T</font><font color="#000000">ap</font><font color="#0491E9"> Order</font></string>
+>>>>>>> main
 </resources>
