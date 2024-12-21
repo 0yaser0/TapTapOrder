@@ -10,4 +10,5 @@
     <color name="firstColorLight">#D00491E9</color>
     <color name="secondColor">#0099FF</color>
     <color name="thirdColor">#407BFF</color>
+    <color name="border">#F5F4F4</color>
 </resources>
