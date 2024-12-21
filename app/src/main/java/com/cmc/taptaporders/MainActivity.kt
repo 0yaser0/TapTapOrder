@@ -8,6 +8,10 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -31,7 +35,16 @@ class MainActivity : ComponentActivity() {
             TapTaOrdersTheme {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { MyToolbar() }
+                    topBar = {
+                        Column {
+                            MyToolbar()
+                            com.cmc.taptaporders.components.SearchBar(
+                                query = "",
+                                onQueryChange = { },
+                                onSearch = { }
+                            )
+                        }
+                    }
                 ) { innerPadding ->
                     Greeting(
                         name = "Android",
@@ -109,6 +122,18 @@ fun MyToolbar() {
             }
         }
     )
+}
+
+@Composable
+fun Searchbar(){
+    var query by remember { mutableStateOf("") }
+    Column {
+        com.cmc.taptaporders.components.SearchBar(
+            query = query,
+            onQueryChange = { newQuery -> query = newQuery },
+            onSearch = {}
+        )
+    }
 }
 
 @Composable
