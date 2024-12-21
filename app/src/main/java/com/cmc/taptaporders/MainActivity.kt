@@ -10,8 +10,14 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.cmc.taptaporders.ui.theme.TapTaOrdersTheme
@@ -41,27 +47,64 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyToolbar() {
     TopAppBar(
+        modifier = Modifier.padding(horizontal = 10.dp),
         title = {
             Text(
-                text = stringResource(R.string.taptaporder),
-                modifier = Modifier.padding(horizontal = 20.dp)
+                text = buildAnnotatedString {
+                    withStyle(
+                        style = SpanStyle(
+                            color = Color(0xFF0F2032),
+                            fontWeight = FontWeight.Bold,
+                            fontStyle = FontStyle(R.font.dancing_script_bold)
+                        )
+                    ) { append("T") }
+                    withStyle(
+                        style = SpanStyle(
+                            color = Color(0xFF000000),
+                            fontWeight = FontWeight.Bold,
+                            fontStyle = FontStyle(R.font.dancing_script_bold)
+                        )
+                    ) { append("ap") }
+                    withStyle(
+                        style = SpanStyle(
+                            color = Color(0xFF0F2032),
+                            fontWeight = FontWeight.Bold,
+                            fontStyle = FontStyle(R.font.dancing_script_bold)
+                        )
+                    ) { append("T") }
+                    withStyle(
+                        style = SpanStyle(
+                            color = Color(0xFF000000),
+                            fontWeight = FontWeight.Bold,
+                            fontStyle = FontStyle(R.font.dancing_script_bold)
+                        )
+                    ) { append("ap") }
+                    withStyle(
+                        style = SpanStyle(
+                            color = Color(0xFF0491E9),
+                            fontWeight = FontWeight.Bold,
+                            fontStyle = FontStyle(R.font.dancing_script_bold)
+                        )
+                    ) { append(" Order") }
+                }
             )
         },
         actions = {
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
                 Image(
                     painter = painterResource(R.drawable.ic_dark_mode),
                     contentDescription = stringResource(R.string.dark_mode_icon),
                     modifier = Modifier
-                        .size(24.dp)
-                        .padding(horizontal = 20.dp)
+                        .size(30.dp)
                 )
+                Spacer(modifier = Modifier.width(16.dp))
                 Image(
                     painter = painterResource(R.drawable.ic_recipes),
                     contentDescription = stringResource(R.string.recipes_icon),
                     modifier = Modifier
-                        .size(24.dp)
-                        .padding(horizontal = 20.dp)
+                        .size(30.dp)
                 )
             }
         }
