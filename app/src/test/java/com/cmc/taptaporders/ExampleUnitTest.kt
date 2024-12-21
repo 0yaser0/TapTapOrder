@@ -1,4 +1,4 @@
-package com.cmc.taptaporder
+package com.cmc.taptaporders
 
 import org.junit.Test
 

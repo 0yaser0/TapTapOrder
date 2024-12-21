@@ -1,4 +1,4 @@
-package com.example.taptaorders.ui.theme
+package com.cmc.taptaporders.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

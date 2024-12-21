@@ -10,21 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
-        android:theme="@style/Theme.TapTaOrders"
+        android:theme="@style/Theme.TapTapOrders"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.TapTaOrders">
-=======
-        android:theme="@style/Theme.TapTapOrder"
-        tools:targetApi="31">
-        <activity
-            android:name=".CommandPage"
+            android:name="com.cmc.taptaporders.MainActivity"
             android:exported="true">
->>>>>>> main
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
