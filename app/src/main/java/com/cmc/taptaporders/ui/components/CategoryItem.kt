@@ -20,7 +20,7 @@ import androidx.compose.ui.platform.LocalContext
 import com.example.taptaorders.R
 
 @Composable
-fun CategorieMenuItem(
+fun CategoryItem(
     imageResId: Int,
     title: String,
     description: String,

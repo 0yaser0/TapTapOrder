@@ -9,8 +9,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.cmc.taptaporders.ui.components.MyToolbar
-import com.cmc.taptaporders.ui.components.CategorieMenuItem
-import com.cmc.taptaporders.data.local.models.CategorieItem
+import com.cmc.taptaporders.data.local.models.CategoryItem
+import com.cmc.taptaporders.ui.components.CategoryItem
 import com.cmc.taptaporders.ui.components.GetTicket
 import com.cmc.taptaporders.ui.components.SearchBarCall
 import com.cmc.taptaporders.ui.components.TotalPrice
@@ -18,7 +18,7 @@ import com.cmc.taptaporders.ui.theme.TapTaOrdersTheme
 import com.example.taptaorders.R
 
 @Composable
-fun MainContent() {
+fun CategoryPage() {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = {
@@ -35,21 +35,21 @@ fun MainContent() {
                         .padding(paddingValues)
                 ) {
 
-                    val categorieList = listOf(
-                        CategorieItem(R.drawable.burger, "Burger", "bnin"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Burger", "nadi"),
-                        CategorieItem(R.drawable.burger, "Tacos", "harban")
+                    val categoryList = listOf(
+                        CategoryItem(R.drawable.burger, "Burger", "bnin"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Burger", "nadi"),
+                        CategoryItem(R.drawable.burger, "Tacos", "harban")
                     )
 
-                    items(categorieList) { food ->
-                        CategorieMenuItem(
+                    items(categoryList) { food ->
+                        CategoryItem(
                             imageResId = food.path,
                             title = food.title,
                             description = food.desc,
@@ -80,8 +80,8 @@ fun MainContent() {
 
 @Preview(showBackground = true)
 @Composable
-fun MainContentPreview() {
+fun CategoryPagePreview() {
     TapTaOrdersTheme {
-        MainContent()
+        CategoryPage()
     }
 }
