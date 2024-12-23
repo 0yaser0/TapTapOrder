@@ -16,7 +16,7 @@ import com.cmc.taptaporders.ui.components.SearchBarCall
 import com.cmc.taptaporders.ui.components.TotalPrice
 import com.cmc.taptaporders.ui.theme.TapTaOrdersTheme
 import com.example.taptaorders.R
-
+    
 @Composable
 fun CategoryPage() {
     Scaffold(
