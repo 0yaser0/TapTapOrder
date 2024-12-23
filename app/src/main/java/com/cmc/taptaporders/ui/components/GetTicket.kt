@@ -30,7 +30,7 @@ fun GetTicket() {
             .fillMaxWidth()
             .background(color = Color.White)
             .height(boxHeight),
-        contentAlignment = Alignment.BottomCenter
+        contentAlignment = Alignment.TopCenter
     ) {
         GetTicketButton()
     }
@@ -39,12 +39,12 @@ fun GetTicket() {
 @Composable
 fun GetTicketButton() {
     Button(
-        onClick = { /* Handle button click */ },
+        onClick = { },
         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF00AAFF)),
         shape = RoundedCornerShape(4.dp),
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 10.dp, vertical = 20.dp)
+            .padding(horizontal = 10.dp, vertical = 10.dp)
     ) {
         Text(
             text = "Get Ticket",
@@ -59,7 +59,7 @@ fun TotalPrice() {
         modifier = Modifier
             .fillMaxWidth()
             .background(color = Color.White)
-            .padding(15.dp),
+            .padding(vertical = 10.dp, horizontal = 15.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
