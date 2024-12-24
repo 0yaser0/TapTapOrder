@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="horizontal"
     android:padding="15dp">
 
     <ImageView
@@ -12,12 +11,12 @@
         android:contentDescription="@null" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="center"
-        android:layout_marginHorizontal="10dp">
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/category_title"
@@ -32,11 +31,11 @@
             android:textAppearance="@style/input_15sp_gray" />
     </LinearLayout>
 
-
     <ImageView
         android:id="@+id/category_arrow"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/arrow_categorie"
-        android:contentDescription="@null" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
+        android:src="@drawable/arrow_categorie" />
 </LinearLayout>

@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
@@ -56,20 +57,19 @@
             android:id="@+id/menu_item_quantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="0"
             android:layout_marginHorizontal="10dp"
             android:textAppearance="@style/text_20sp_darkBlue" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/inecrement_button"
+            android:id="@+id/increment_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/cercle"
-            android:gravity="center"
             android:padding="10dp"
+            android:gravity="center"
             android:text="+"
             android:textColor="@android:color/white"
-            app:cornerRadius="4dp" />
+            app:cornerRadius="200dp" />
     </LinearLayout>
 </LinearLayout>
